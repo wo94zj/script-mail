@@ -1,0 +1,11 @@
+﻿subject=这是一个测试邮件
+toUser=赵杰<zj_400@163.com>
+ccUser=
+sccUser=
+content=
+你好：
+
+    这前面是4个空格，在${ip}上的服务${serverName}进程不存在，时间：${time} ....
+	
+	
+O(∩_∩)O哈哈~

@@ -1,0 +1,37 @@
+<assembly>
+  <id>package</id>
+  <formats>
+    <format>zip</format>
+  </formats>
+  <includeBaseDirectory>true</includeBaseDirectory>
+  <fileSets>
+    <fileSet>
+      <directory>src/main/resources/bin</directory>
+      <outputDirectory>${file.separator}</outputDirectory>
+    </fileSet>
+    <fileSet>
+      <directory>src/main/resources/template</directory>
+      <includes>
+        <include>email.txt</include>
+      </includes>
+      <outputDirectory>${file.separator}</outputDirectory>
+    </fileSet>
+  </fileSets>
+
+  <files>
+    <file>
+      <source>README.txt</source>
+      <outputDirectory>${file.separator}doc</outputDirectory>
+    </file>
+    <file>
+      <source>src/main/resources/mail-sender.properties</source>
+      <outputDirectory>${file.separator}</outputDirectory>
+    </file>
+    <file>
+      <source>${project.build.directory}${file.separator}${build.finalName}.jar</source>
+      <outputDirectory>${file.separator}</outputDirectory>
+      <destName>${build.finalName}.jar</destName>
+    </file>
+  </files>
+
+</assembly>
